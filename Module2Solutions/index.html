@@ -1,10 +1,184 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Module 2 Solution</title>
+
+<style>
+
+/********** Base styles **********/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.75em;
+}
+
+#box {
+  background-color: #c0c0c0;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+#content {
+	padding:15px;
+	clear: right
+}
+
+#m1 {
+	background-color: #e3abf9;
+	width:100px;
+	padding: 2px;
+	text-align: center;
+	font-size: 1.25em;
+	float: right;
+	border: 1px solid #000000;
+}
+
+#m2 {
+	background-color: #66cdaa;
+	width:100px;
+	padding: 2px;
+	text-align: center;
+	font-size: 1.25em;
+	float: right;
+	border: 1px solid #000000;
+}
+
+#m3 {
+	background-color: #efe46f;
+	width:100px;
+	padding: 2px;
+	text-align: center;
+	font-size: 1.25em;
+	float: right;
+	border: 1px solid #000000;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    margin-right: auto;
+   	margin-left: auto;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-sm{
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+}
+
+</style>
 </head>
 <body>
-<H1>Ref tag for solution</H1>
+<h1>Our Menu</h1>
+
+<div class="col-lg-4 col-md-6 col-sm"><div id="box"><section id="m1">Chicken</section><section id="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tortor ante, vitae blandit nibh varius finibus. Integer sollicitudin finibus lectus, non maximus quam. Vestibulum iaculis sapien ipsum, quis fringilla odio ultricies nec. In aliquam aliquet consequat. Curabitur ut ultricies augue.</section></div></div>
+<div class="col-lg-4 col-md-6 col-sm"><div id="box"><section id="m2">Beef</section><section id="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tortor ante, vitae blandit nibh varius finibus. Integer sollicitudin finibus lectus, non maximus quam. Vestibulum iaculis sapien ipsum, quis fringilla odio ultricies nec. In aliquam aliquet consequat. Curabitur ut ultricies augue.</section></div></div>
+<div class="col-lg-4 col-md-12 col-sm"><div id="box"><section id="m3">Pork</section><section id="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tortor ante, vitae blandit nibh varius finibus. Integer sollicitudin finibus lectus, non maximus quam. Vestibulum iaculis sapien ipsum, quis fringilla odio ultricies nec. In aliquam aliquet consequat. Curabitur ut ultricies augue.</section></div></div>
+ 
 </body>
 </html>
